@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Books or Mine?</title>
+  <!-- linking social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* style for entire page */
+    *{
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      font-family: Arial, Helvetica, sans-serif; 
+    }
+    /* style for header h1 */
+    h1{
+      padding-right: 100px;
+      font-style: italic;
+      font-family: monospace;
+    }
+    /* styling header link */
+    h1 a{
+      text-decoration: none;
+      color:black;
+      font-family: monospace;
+    }
+  </style>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background-color:#DAAA63;">
+  <!-- wrapper for page -->
+  <div style="width:100%;height:100%;background-color:#f8f7de;">
+   <header>
+     <div>
+       <h1><a href="../index.html"> Your Books or Mine? </a></h1>
+     </div>
+       <!-- navigation bar  -->
+         <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li class="active"><a href="research.html">Research</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+         </nav>
+   </header> 
+   <!-- info about page -->
+   <div class="ref">
+     <h2>Reference Material</h2><br>
+     <p>
+       Here in this page are references taken from various pages and implement in 
+       through out the page.
+     </p>
+   </div> 
+   <hr color="black" size="3px"><br>
+   <!-- div for 1st refrence img -->
+   <div>
+    <div class="ref1">
+      <a href="https://www.okdam.com/category/books" target="_blank"><img src="../images/refproducthover.png" alt="" style="height: 450px;"></a>
+      <p style="width: 450px; padding-top: 150px;">
+        Okdam is a nepali online store. They provide various products and services.
+        They happen to sell books as well. Reference take from here is of div hover.
+        The hover animation is applied in the product page divs.
+      </p>
+     </div>
+     <div class="ref1">
+       <p style="width: 450px;padding-top: 150px;">
+        The reference taken from above page has been implemented here. The reference is 
+        implemented as need of the page and given specific stylings.
+       </p>
+       <img src="../images/productdivhover.png" alt="" style="height: 450px;">
+     </div>
+   </div><br>
+   <hr color="black" size="3px"><br>
+   <!-- div for 2nd reference img -->
+   <div>
+    <div class="ref1">
+      <a href="https://www.simplesite.com/" target="_blank"><img src="../images/headerref.png" alt="" style="height: 450px;" ></a>
+      <p style="width: 450px;padding-top: 150px;">
+        The reference taken from this page is of header content. The header is taken 
+        and implemented in own manner according to page.
+      </p>
+    </div>
+    <div class="ref1">
+      <p style="width: 450px; padding-top: 150px;">
+        The reference taken has been implemented here. The header is kept same without
+        login and language buttons.
+      </p>
+      <img src="../images/header.png" alt="" style="height: 450px;">
+    </div>
+   </div><br>
+   <hr color="black" size="3px"><br>
+   <!-- div for 3rd reference img -->
+   <div>
+    <div class="ref1">
+      <a href="https://booksmandala.com/" target="_blank"><img src="../images/sliderref.png" alt="" style="height: 450px;" ></a>
+      <p style="width: 450px;padding-top: 150px;">
+        Booksmandala is a online book store based in nepal. From this site slider 
+        was taken as reference. 
+      </p>
+    </div>
+    <div class="ref1">
+      <p style="width: 450px; padding-top: 150px;">
+        The refernce was not implemented here as same. The slider here is different
+        than above reference. Slider does not have button to go back and forth.
+      </p>
+      <img src="../images/slider.png" alt="" style="height: 450px;">
+    </div>
+   </div><br>
+   <hr color="black" size="3px"><br>
+   <!-- div for 3rd reference img -->
+   <div>
+    <div class="ref1">
+      <a href="https://animedao.to/" target="_blank"><img src="../images/topbuttonref.png" alt="" style="height: 450px;" ></a>
+      <p style="width: 450px;padding-top: 150px;">
+        This is a anime site. Here are alot of anime as we scroll. There is a button 
+        to go to top of the page. The button is referenced in research page.
+      </p>
+    </div>
+    <div class="ref1">
+      <p style="width: 450px; padding-top: 150px;">
+        The above mentioned button is made here with different style and format.
+        The button helps the user to go top odf the page for easy access.
+      </p>
+      <img src="../images/topbutton.png" alt="" style="height: 450px;">
+    </div>
+   </div><br>
+   <hr color="black" size="3px"><br>
+   <!-- button for going top -->
+   <div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+   </div>
+   <!-- footer using table tag -->
+   <footer align="center">
+    <div class="footer">
+      <table style="width: 100%;">
+        <tr>
+          <td>
+            <p>
+             <h4> We provide genuine books at fair price. </h4>
+            </p><br>
+          </td>
+        </tr>
+        <tr>
+          <td> <!-- link for social media -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </td>
+        </tr><br>
+        <tr>
+          <td>
+            &copy;2022 Your Books or Mine? 
+          </td>
+        </tr>
+      </table>
+    </div>
+  </footer>
+   <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 200px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+ </div>
+</body>
+</html>

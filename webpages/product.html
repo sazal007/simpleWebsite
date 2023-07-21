@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Books or Mine?</title>
+  <!-- linking social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* style for entire page */
+    *{
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      font-family: Arial, Helvetica, sans-serif; 
+    }
+    /* style header h1 */
+    h1{
+      padding-right: 100px;
+      font-style: italic;
+      font-family: monospace;
+    }
+    /* style header link */
+    h1 a{
+      text-decoration: none;
+      color:black;
+      font-family: monospace;
+    }
+  </style>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background-color:#DAAA63;">
+  <!-- wrapper for page -->
+  <div style="width:100%;height:100%;background-color:#f8f7de;">
+    <header>
+      <div>
+        <h1><a href="../index.html"> Your Books or Mine? </a></h1>
+      </div>
+        <!-- navigation bar  -->
+          <nav>
+             <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li class="active"><a href="product.html">Product</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="research.html">Research</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+             </ul>
+          </nav>
+    </header>  
+    <!-- div for slider -->
+    <div class="slider">
+      <div id="img">
+        <img src="../images/logo.png" alt="logo">
+      </div>
+    </div>
+    <!-- div for fiction 2 books -->
+    <div style="margin: 20px;">
+      <label><h2>Fictional.</h2></label>
+      <hr color="black" size="3px">
+      <div style="display: flex; margin-top: 10px;">
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/harrypotter.jpeg" alt="" style="padding-left: 65px; height: 175px;width: 200px;">
+          <div style="padding-left: 65px;">
+            <p>
+              <h3>Harry Potter and the Order of the Phoenix</h3><br>
+              by J.K. Rowling, Mary GrandPré. <br> Rating: 4.50 <br>
+              Price: Rs.1250
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div><br>
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/thebooktheif.jpeg" alt="" style="padding-left: 75px;height: 175px;width: 200px;">
+          <div style="padding-left: 80px;">
+            <p>
+              <h3>The Book Theif</h3><br>
+              by Markus Zusak. <br> Rating: 4.38 <br>
+              price: Rs.1050
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div for fiction 2 book -->
+    <div style="margin: 20px;">
+      <div style="display: flex;justify-content: space-between;">
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/narnia.jpeg" alt="" style="padding-left: 65px;height: 175px;width: 200px;">
+          <div style="padding-left: 65px;">
+            <p>
+              <h3>The Chronicles of Narnia</h3><br>
+              by C.S. Lewis, Pauline Baynes. <br> Rating: 4.26 <br>
+              Price: Rs.950
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div><br>
+         <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/hungergames.jpeg" alt="" style="padding-left: 75px;height: 175px;width: 200px;">
+          <div style="padding-left: 80px;">
+            <p>
+              <h3>The Hunger Games</h3><br>
+              by Suzanne Collins. <br> Rating: 4.32 <br>
+              Price: Rs.1050
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div for 2 horror books -->
+    <div style="margin: 20px;">
+      <label><h2>Horror.</h2></label>
+      <hr color="black" size="3px">
+      <div style="display: flex; margin-top: 10px;">
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/sundial.jpg" alt="" style="padding-left: 65px;height: 175px;width: 200px;">
+          <div style="padding-left: 65px;">
+            <p>
+              <h3>Sundial</h3><br>
+              by Catriona Ward. <br> Rating: 3.95 <br>
+              Price: Rs.950
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div><br>
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/lastexit.jpeg" alt="" style="padding-left: 75px;height: 175px;width: 200px;">
+          <div style="padding-left: 80px;">
+            <p>
+              <h3>Last Exit</h3><br>
+              by Max Gladstone. <br> Rating: 3.83 <br>
+              Price: Rs.950
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div for 2 horror books -->
+    <div style="margin: 20px;">
+      <div style="display: flex;justify-content: space-between;">
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/theorchid.jpeg" alt="" style="padding-left: 65px;height: 175px;width: 200px;">
+          <div style="padding-left: 65px;">
+            <p>
+              <h3>The Bone Orchard</h3><br>
+              by Sara A. Mueller. <br> Rating: 3.78 <br>
+              Price: Rs.1050
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div><br>
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/lastlaugh.jpeg" alt="" style="padding-left: 75px;height: 175px;width: 200px;">
+          <div style="padding-left: 80px;">
+            <p>
+              <h3>The Last Laugh</h3><br>
+              by Mindy McGinnis. <br> Rating: 4.25 <br>
+              Price: Rs.950
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div for 2 travel books -->
+    <div style="margin: 20px;">
+      <label><h2>Travel.</h2></label>
+      <hr color="black" size="3px">
+      <div style="display: flex; margin-top: 10px;">
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/oneitalian.jpeg" alt="" style="padding-left: 65px;height: 175px;width: 200px;">
+          <div style="padding-left: 65px;">
+            <p>
+              <h3>One Italian Summer</h3><br>
+              by Rebecca Serle. <br> Rating: 3.80 <br>
+              Price: Rs.1050
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div><br>
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/unsinkable.jpeg" alt="" style="padding-left: 75px;height: 175px;width: 200px;">
+          <div style="padding-left: 80px;">
+            <p>
+              <h3>The Unsinkable Greta James</h3><br>
+              by Jennifer E. Smith. <br> Rating: 4.03 <br>
+              Price: Rs.1100
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div for 2 travel books -->
+    <div style="margin: 20px;">
+      <div style="display: flex;justify-content: space-between;">
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/vagabonds.jpeg" alt="" style="padding-left: 65px;height: 175px;width: 200px;">
+          <div style="padding-left: 65px;">
+            <p>
+              <h3>Vagabonds!</h3><br>
+              by Eloghosa Osunde. <br> Rating: 4.20 <br>
+              Price: Rs.1250
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div><br>
+        <!-- div for book and img -->
+        <div class="books">
+          <img src="../images/london.jpg" alt="" style="padding-left: 75px;height: 175px;width: 200px;">
+          <div style="padding-left: 80px;">
+            <p>
+              <h3>The Architecture Lover’s Guide to London</h3><br>
+              by Sian Lye. <br> Rating: 4.58 <br>
+              Price: Rs.1250
+            </p><br>
+            <button onclick="btn()">Purchase</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer using table tag -->
+    <footer align="center">
+      <div class="footer">
+        <table style="width: 100%;">
+          <tr>
+            <td>
+              <p>
+               <h4> We provide genuine books at fair price. </h4><br>
+               We have not started to distriburte through this page.
+              </p><br>
+            </td>
+          </tr>
+          <tr>
+            <td> <!-- link for social media -->
+              <a href="#" class="fa fa-facebook"></a>
+	            <a href="#" class="fa fa-instagram"></a>
+            	<a href="#" class="fa fa-twitter"></a>
+            </td>
+          </tr><br>
+          <tr>
+            <td>
+              &copy;2022 Your Books or Mine? 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+     <!-- link for external js -->
+    <script src="../js/product.js"></script>
+  </div>
+</body>
+</html>

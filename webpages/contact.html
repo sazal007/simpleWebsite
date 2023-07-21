@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Books or Mine?</title>
+  <!-- linking social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* style for entire page */
+     *{
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      font-family: Arial, Helvetica, sans-serif; 
+    }
+    /* style for header h1 */
+    h1{
+      padding-right: 100px;
+      font-style: italic;
+      font-family: monospace;
+    }
+    /* style h1 link */
+    h1 a{
+      text-decoration: none;
+      color:black;
+      font-family: monospace;
+    }
+    /* style for img */
+    img{
+      height: 300px;
+      margin: 10px;
+      width: 450px; 
+    }
+    /* style for all p tags */
+    p{
+      font-size: 17px;
+    }
+  </style>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background-color:#DAAA63;">
+   <!-- wrapper for page -->
+  <div style="width:100%;height:100%;background-color:#f8f7de;">
+    <header>
+      <div>
+        <h1><a href="../index.html"> Your Books or Mine? </a></h1>
+      </div>
+        <!-- navigation bar  -->
+          <nav>
+             <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="product.html">Product</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="research.html">Research</a></li>
+               <li class="active"><a href="contact.html">Contact Us</a></li>
+             </ul>
+          </nav>
+    </header>  
+    <!-- div for form, img and info -->
+    <div class="container01">
+      <!-- div for form -->
+      <div class="form">
+        <form name="messageForm" onsubmit="validateForm()">
+          <label>Name</label>
+          <input type="text" name="name" class="input">
+          <br>
+          <label>Age</label>
+          <input type="number" name="age" class="input">
+          <br>
+          <label>Email</label>
+          <input type="text" name="mail" class="input">
+          <br>
+          <label>Contact</label>
+          <input type="text" name="contact" class="input">
+          <br><br>
+          <label>Feedback</label>
+          <br>
+          <textarea rows="12" cols="35" name="message" placeholder=" Feedback "></textarea>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <!-- div for info -->
+      <div style="width: 30%;">
+        <p>
+          We like to receive your feedback. Your feedback is necessary for maintainging
+          our page and its userinterface. Your feedback helps in our growth.
+          <br>
+          You leave any ideas and advices we will make it happen. Sooner or Later.
+          <br>
+          Feel free to <strong>Contact Us</strong> for any thing.
+          <br>
+          You can mail us also <br> Email: yourbooksormine?@gmail.com <br>
+          or Contact us in our socialmedias.
+        </p>
+      </div>
+      <!-- div for img -->
+      <div>
+        <img src="../images/Feedback.png" alt="">
+      </div>
+    </div>
+    <!-- div for text animation -->
+    <div style="height: 12%; font-size: larger;margin: 40px;">
+      <hr color="black" size="3px">
+      <h2><marquee behavior="alternate" direction="right" scrollamount="12"> Do Support Us!!!</marquee></h2>
+      <hr color="black" size="3px">
+    </div>
+    <!-- footer using table tag -->
+    <footer align="center">
+      <div class="footer">
+        <table style="width: 100%;">
+          <tr>
+            <td>
+              <p>
+               <h4> We provide genuine books at fair price. </h4>
+              </p><br>
+            </td>
+          </tr>
+          <tr>
+            <td> <!-- link for social media -->
+              <a href="#" class="fa fa-facebook"></a>
+	            <a href="#" class="fa fa-instagram"></a>
+            	<a href="#" class="fa fa-twitter"></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              &copy;2022 Your Books or Mine? 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+    <!-- js for form validation -->
+    <script type="text/javascript">
+			function validateForm()
+      // calls all the field that does not need to be empty
+			{
+				var Name = document.forms["messageForm"]["name"].value;
+				var age = document.forms["messageForm"]["age"].value;
+        var mail = document.forms["messageForm"]["mail"].value;
+        var contact = document.forms["messageForm"]["contact"].value;
+				var messageDetails = document.forms["messageForm"]["message"].value;
+				//alert(messageDetails);
+				if (Name == "" || age == "" || mail == "" || contact == "" || messageDetails == "") 
+				{
+					alert("Fields are Empty!!! Provide Feedback");
+				}
+				else
+				{
+					alert("Your Feedback has been recorded")
+				}
+			}
+		</script>
+  </div>
+</body>
+</html>

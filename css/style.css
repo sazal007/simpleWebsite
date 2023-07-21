@@ -1,0 +1,203 @@
+/* list link */
+li a {
+  text-decoration: none;
+  color: black;
+}
+/* nav hover */
+li a:hover {
+  color: #daaa63;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 5px;
+}
+/* header style */
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #ffebcd;
+}
+/* nav list */
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+  padding-top: 5px;
+  font-size: 18px;
+}
+/* image styleing */
+img {
+  height: 350px;
+  width: 450px;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+/* nav list active */
+li.active {
+  text-decoration: underline;
+  font-style: italic;
+}
+/* style for home page */
+/* style for info class div */
+.info {
+  width: 45%;
+  padding: 50px;
+  padding-top: 110px;
+  padding-left: 100px;
+  font-size: 18px;
+}
+/* styling info2 about books */
+.info2 {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin: 20px;
+  padding: 20px;
+}
+/* product page styles */
+/* styling slider class div */
+.slider {
+  width: 90%;
+  margin: 25px auto;
+  border: solid black 2px;
+}
+/* styling img of slider */
+.slider img {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+}
+/* style for all class books */
+.books {
+  display: flex;
+  width: 50%;
+  background-color: #ffebcd;
+  height: 230px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+/* hover animation for books class div */
+.books:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 5px 5px #daaa63;
+}
+/* styling all the buttons */
+button {
+  border: 1px solid black;
+  border-radius: 5px 0px 5px 0px;
+  background: none;
+  padding: 10px 15px;
+  font-size: 17px;
+  font-family: serif;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #daaa63;
+}
+/* blog page styles */
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+/* font size for p tags */
+p {
+  font-size: 18px;
+}
+/* styling all quote classes */
+.quote {
+  text-align: center;
+  margin: 20px;
+  font-size: 22px;
+  font-family: monospace;
+  background-color: #ffebcd;
+  border-radius: 10px;
+}
+/* research page styles */
+/* style for ref class */
+.ref {
+  padding: 20px;
+  margin: 10px;
+}
+/* style for ref1 class */
+.ref1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* style for button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+/* button hover */
+#myBtn:hover {
+  background-color: grey;
+}
+/* contact us style */
+/* style for fornn class div */
+.form {
+  background-color: #ffebcd;
+  width: 25%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding-top: 25px;
+  border-radius: 10px;
+}
+/* style for container class div */
+.container01 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-between;
+  height: 65%;
+}
+/* styke for all inout type */
+.input {
+  display: block;
+  width: 95%;
+  height: 25px;
+}
+/* style for footer */
+footer {
+  background-color: #ffebcd;
+  height: 18%;
+  padding: 20px;
+}
+/* styles for social media */
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  color: black;
+  text-decoration: none;
+  padding-right: 5px;
+  height: 25px;
+}
+.fa-instagram {
+  color: black;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 25px;
+}
+.fa-twitter {
+  color: black;
+  text-decoration: none;
+  padding: 0px 5px;
+  height: 25px;
+}
